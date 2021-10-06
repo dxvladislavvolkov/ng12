@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app2';
+    isVisible: boolean = false;
+    type: string = "info";
+    message: string = "";
+
+    onClick(e: any) {
+       this.type = "success";
+       this.message = "My Message";
+       this.isVisible = true;
+    }
 }
